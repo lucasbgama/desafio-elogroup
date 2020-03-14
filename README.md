@@ -22,9 +22,9 @@ O envio é feito via POST para o endpoint http://localhost:8080.
 O servidor retorna os dados recebidos e o botão "Enviar" é desabilitado.
 
 ## Arquivos
-index.html - É a página principal do formulário que deve ser carregada no navegador.
-styles.css , elogroup.js - Arquivos de CSS e JavaScript carregados pelo index.html.
-server.js - Script para o servidor com NodeJS, permitindo que o client se comunique com endpoint.
+* index.html - É a página principal do formulário que deve ser carregada no navegador.
+* styles.css , elogroup.js - Arquivos de CSS e JavaScript carregados pelo index.html.
+* server.js - Script para o servidor com NodeJS, permitindo que o client se comunique com endpoint.
 
 ## Pré-requisitos
 NodeJS e o frameWork Express.
