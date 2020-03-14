@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Gama - Desafio de Programação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form onsubmit="validateForm(this); return false;">
+        <fieldset>
+            <legend align="right">Formulário</legend>
+            <div class="nome">
+                <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required placeholder="Nome e sobrenome">
+            </div>
+            <div class="tel">
+                <label for="tel">Telefone:</label>
+                    <input type="text" id="tel" name="tel" placeholder="99 - 99999999">
+            </div>
+            <div class="source">
+                <label for="source">Como nos conheceu?</label>
+                    <select name="source" id="source">
+                        <option selected></option>
+                        <option value="tv">TV</option>
+                        <option value="internet">Internet</option>
+                        <option value="outros">Outros</option>
+                    </select>
+            </div>
+            <div class="social" id="social">
+                <label for="social">Possui rede social?</label>
+                <input type="radio" id = "sim" name="social" value="sim">
+                <label for="sim">Sim</label>
+                <input checked type="radio" id = "nao" name="social" value="nao">
+                <label for="nao">Não</label>
+            </div>
+
+            <div hidden class="social-selected">
+                <label for="social-selected">Quais?</label>
+                <label>
+                    <input type="checkbox" value="facebook" name="social-selected" id="facebook"> Facebook
+                </label>
+                <label>
+                    <input type="checkbox" value="linkedin" name="social-selected" id="linkedin"> LinkedIn
+                </label>
+                <label>
+                    <input type="checkbox" value="instagram" name="social-selected" id="instagram"> Instagram
+                </label>
+            </div>
+        </fieldset>
+        <button type="submit" name="submitBtn">Enviar</button>
+    </form>
+    
+    <script src="./elogroup.js"></script>
+</body>
+</html>
